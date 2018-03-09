@@ -8,6 +8,3 @@ RUN cd /usr/share/elasticsearch/plugins && \
 	unzip elasticsearch-analysis-ik-6.2.2.zip && \
 	mv elasticsearch analysis-ik && \
 	rm -rf elasticsearch-analysis-ik-6.2.2.zip
-
-USER root
-RUN sysctl -w vm.max_map_count=262144
